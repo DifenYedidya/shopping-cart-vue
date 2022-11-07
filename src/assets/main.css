@@ -1,35 +1,106 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
+.main {
+    font-family: 'Roboto';
+    background-color: antiquewhite;
     display: flex;
-    place-items: center;
-  }
+    padding: 20px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.card {
+    width: 280px;
+    margin: 12px;
+    border-radius: 25px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card-header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 24px;
+    background-color: #31C7CE;
+    color: white;
+    border-radius: 0px 0px 45px 0px;
+}
+
+.card-title {
+    color: #B6B6B6;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.percentage {
+    background-color: #FFDBE2;
+    color: #ED3C47;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+}
+
+.price {
+    font-weight: 600;
+    line-height: 39px;
+    font-size: 26px;
+}
+
+.disc-price {
+    color: #B6B6B6;
+    opacity: 0.6;
+}
+
+.btn {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(311.55deg, #01ACC4 7.49%, #29C7CF 50.69%, #4CCBCE 111.84%);
+    border-radius: 15px;
+}
+
+.btn-text {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.cart {
+    width: 34px;
+    height: 34px;
+}
+
+.checkout-card {
+    padding: 40px;
+    width: 500px;
+}
+
+.table-head {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.table-content {
+    padding-right: 14px;
+    padding-bottom: 14px;
+}
+
+.line {
+    border: 1px solid #E3E3E3;
+    padding: 50 40;
 }
