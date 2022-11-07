@@ -41,7 +41,7 @@ export default {
     async getData() {
       try {
         let response = await fetch("https://dummyjson.com/products");
-        this.posts = await response.json();
+        this.products = await response.json();
       } catch (error) {
         console.log(error);
       }
